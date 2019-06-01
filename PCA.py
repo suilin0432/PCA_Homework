@@ -43,7 +43,7 @@ pca = PCA(data=data)
 print(data)
 
 for i in range(1, 9):
-    # file = open("PCA_k_{}.txt".format(i), "w")
+    print("K = {0}".format(i))
     # shape: 1024 * k, 1024 * 8
     pca.k = i
     finalData, reconData = pca.run()
